@@ -347,11 +347,11 @@ public class ManomotionManager : ManomotionBase
         manomotion_session = new Session();
         manomotion_session.orientation = ManoUtils.Instance.currentOrientation;
         manomotion_session.add_on = AddOn.ARFoundation;
-        manomotion_session.smoothing_controller = 0.15f;
-        manomotion_session.gesture_smoothing_controller = 0.65f;
-        manomotion_session.enabled_features.gestures = 0;
-        manomotion_session.enabled_features.skeleton_3d = 0;
-        manomotion_session.enabled_features.fast_mode = 0;
+        manomotion_session.smoothing_controller = 0.55f;
+        manomotion_session.gesture_smoothing_controller = 0.75f;
+        manomotion_session.enabled_features.gestures = 1;
+        manomotion_session.enabled_features.skeleton_3d = 1;
+        manomotion_session.enabled_features.fast_mode = 1;
         manomotion_session.enabled_features.wrist_info = 0;
         manomotion_session.enabled_features.finger_info = 0;
         manomotion_session.enabled_features.contour = 0;

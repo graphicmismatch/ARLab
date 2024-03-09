@@ -10,8 +10,8 @@ public class GameManager : MonoBehaviour
     {
         ManomotionManager.Instance.ShouldRunFastMode(true);
         ManomotionManager.Instance.ShouldCalculateGestures(true);
-        ManomotionManager.Instance.ShouldCalculateSkeleton3D(true);
-        ManomotionManager.Instance.SetManoMotionSmoothingValue(0.55f);
+        ManomotionManager.Instance.ShouldCalculateSkeleton3D(false);
+        ManomotionManager.Instance.SetManoMotionSmoothingValue(0.65f);
     }
 
     // Update is called once per frame
