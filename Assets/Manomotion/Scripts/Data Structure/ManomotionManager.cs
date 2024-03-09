@@ -567,7 +567,10 @@ public class ManomotionManager : ManomotionBase
     {
         manomotion_session.smoothing_controller = slider.value;
     }
-
+    public void SetManoMotionSmoothingValue(float slider)
+    {
+        manomotion_session.smoothing_controller = slider;
+    }
     /// <summary>
     /// Lets the SDK know if it should calculate the Skeleton in 3D or 2D.
     /// And gives information to SkeletonManager which skeleton model to display.

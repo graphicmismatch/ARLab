@@ -457,7 +457,7 @@ public class GizmoManager : MonoBehaviour
         TrackingInfo trackingInfo = ManomotionManager.Instance.Hand_infos[0].hand_info.tracking_info;
         Warning warning = ManomotionManager.Instance.Hand_infos[0].hand_info.warning;
         Session session = ManomotionManager.Instance.Manomotion_Session;
-
+        GameManager.GI = gestureInfo;
         DisplayContinuousGestures(gestureInfo.mano_gesture_continuous);
         DisplayManoclass(gestureInfo.mano_class);
         DisplayTriggerGesture(gestureInfo.mano_gesture_trigger, trackingInfo);
@@ -582,6 +582,7 @@ public class GizmoManager : MonoBehaviour
                     break;
                 case ManoClass.PINCH_GESTURE:
                     manoClassText.text = "Manoclass: Pinch Class";
+
                     break;
                 case ManoClass.POINTER_GESTURE:
                     manoClassText.text = "Manoclass: Pointer Class";
@@ -733,17 +734,12 @@ public class GizmoManager : MonoBehaviour
                 }
             }
 
-            if (_showClickTriggerGesture)
-            {
+
                 if (triggerGesture == ManoGestureTrigger.CLICK)
                 {
-                    TriggerDisplay(trackingInfo, ManoGestureTrigger.CLICK);
-                    if (GameObject.Find("PICK"))
-                    {
-                        GameObject.Find("PICK").SetActive(false);
-                    }
+                
                 }
-            }
+
 
             if (_showSwipes)
             {
