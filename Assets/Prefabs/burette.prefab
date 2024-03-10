@@ -111,10 +111,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87cd0aa7e17e857429d74243709997e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  area: {fileID: 6025841137862046763}
-  radius: 0.503
+  radius: 0.05
   inRange: {fileID: 0}
   particle: {fileID: 6430831169540273373}
+  pt: {fileID: 6025841137862046763}
+  on: 1
 --- !u!1 &6025841137862046763
 GameObject:
   m_ObjectHideFlags: 0
@@ -226,8 +227,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0.343}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.27, y: 0.27, z: 0.27}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 6398449526600002127}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
@@ -247,7 +248,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   emitterVelocityMode: 1
   looping: 1
-  prewarm: 0
+  prewarm: 1
   playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
@@ -314,7 +315,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.3
+      scalar: 0.12
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -802,7 +803,7 @@ ParticleSystem:
         m_RotationOrder: 4
     randomizeRotationDirection: 0
     gravitySource: 0
-    maxNumParticles: 1000
+    maxNumParticles: 882
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0

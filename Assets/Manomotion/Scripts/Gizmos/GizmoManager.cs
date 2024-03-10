@@ -431,7 +431,7 @@ public class GizmoManager : MonoBehaviour
         HighlightStatesToStateDetection(0);
         InitializeFlagParts();
         InitializeTriggerPool();
-        SetFeaturesToCalculate();
+       
     }
 
     /// <summary>
@@ -466,7 +466,7 @@ public class GizmoManager : MonoBehaviour
         DisplayApproachingToEdgeFlags(warning);
         DisplayFingerFlags(trackingInfo, gestureInfo);
         DisplayWristFlags(trackingInfo, gestureInfo);
-        DisplayCurrentsmoothingValue(session);
+       
         DisplaySmoothingSlider();
         DisplayDepthEstimation(trackingInfo.depth_estimation);
         DisplayWristInformation();

@@ -5,7 +5,7 @@ using UnityEngine;
 public class InteractionManager : MonoBehaviour
 {
     public GameObject InHand;
-    public bool Interactable;
+    public bool Interactable = false;
     public GameObject Hand;
     public static List<GameObject> Interactibles = new List<GameObject>();
     public GameObject Spawn;
@@ -83,9 +83,10 @@ public class InteractionManager : MonoBehaviour
             
         }
 
-        if (GameManager.GI.mano_gesture_trigger == ManoGestureTrigger.CLICK)
+        if (GameManager.GI.mano_gesture_trigger == ManoGestureTrigger.CLICK && !Interactable)
         {
             Instantiate(Spawn, Camera.main.ViewportToWorldPoint(new Vector3(tracking.palm_center.x, tracking.palm_center.y, tracking.depth_estimation)), Quaternion.identity);
+            Interactable = true;
         }
     }
 
