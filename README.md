@@ -7,6 +7,7 @@ ARLab is a Unity project aimed at creating an immersive laboratory simulation ex
 - Skeleton hand tracking for precise hand interactions.
 - A hybrid user interaction model using UI in both virtual and static scopes.
 - Safety protocols and ethical guidelines integrated into simulations.
+- [User Interaction and Feature Case Study](https://www.figma.com/file/wkA369YlD60cHgtbznRgNK/ARLab?type=design&node-id=0%3A1&mode=design&t=bKASUBZ8B3gNZZ8d-1)
 
 ## Requirements
 - Android 9.0 or later
