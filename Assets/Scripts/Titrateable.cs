@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ProximityDetector : MonoBehaviour
+public class Titrateable : MonoBehaviour
 {
+    public bool filling;
+    public Animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +15,8 @@ public class ProximityDetector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (filling) { 
+         
+        }
     }
 }
